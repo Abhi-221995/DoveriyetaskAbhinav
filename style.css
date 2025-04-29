@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+/* This css is for Receipt-container */
+
+.receipt-container{
+    width: 25%;
+    height: 50vh;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+}
+.receipt-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+}
+.googleiocn{
+    width: 35px;
+    height: 35px;
+}
+.date{
+    padding-top: 10px;
+    color: #b3b0b0;
+    font-size: 0.85em;
+}
+.item-description{
+    color: #838080;
+}
+.receipt-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px 25px 20px;
+    font-size: small;
+    font-weight: 700;
+}
+.divider{
+    padding: 0px 20px 0px 20px;
+    height: 0.5px;
+
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    font-size: small;
+}
+.total-line{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 5px 20px;
+}
+
+/* This css is for Barcode section */
+
+.barcode{
+    width: 25%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    border-top: 1px solid rgb(223, 214, 214);
+}
+.barcodeImg{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+}
+.totalAmount{
+    color: #838080; 
+    font-weight: 700;
+} 
+
+/* This css is for Half circle cut */
+
+.cut {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(222, 235, 235);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .cut-left {
+    left: -10px;
+  }
+  
+  .cut-right {
+    right: -10px;
+  }
+  
+  .content .cut-left,
+  .content .cut-right {
+    bottom: -10px;
+  }
+  
+  .barcode .cut-left,
+  .barcode .cut-right {
+    top: -10px;
+  }
+
+
+  @media (max-width: 820px) {
+    .receipt-container{
+        width: 50%;
+        height: 30vh;
+    }
+    .barcode{
+        width: 50%;
+    }
+  }
+
+/* CSS for mobile view */
+
+  @media (max-width: 477px){
+    .receipt-container{
+        width: 65%;
+        height: 32vh;
+    }
+    .barcode{
+        width: 65%;
+    }
+    .receipt-title{
+        font-size: x-small;
+    }
+    .item{
+        font-size: x-small;
+    }
+    .total-line{
+        font-size: x-small;
+    }
+    .totalAmount{
+        font-weight: 700;
+    }
+  }
