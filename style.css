@@ -150,6 +150,7 @@ body{
     }
     .total-line{
         font-size: x-small;
+        padding-bottom: 10px;
     }
     .totalAmount{
         font-weight: 700;
